@@ -1,0 +1,61 @@
+*,*::before,*::after {
+    margin:0;
+    padding:0;
+    
+}
+
+#clock2 {
+    width: 400px;
+    height: 120px;
+    margin:50px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    font-family: 'Permanent Marker', cursive;
+    padding:3em 1.5em;
+    -webkit-box-reflect:below 1px linear-gradient(transparent,#0004);
+    background-image: linear-gradient(45deg, #d299c2, #fef9d7);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 30%;
+    animation: sunny 5s infinite 0.1s;
+}
+
+#clock2:hover{
+    background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
+}
+
+#clk2-date{
+    font-size:1.5rem;
+}
+
+#clk2-time{
+    font-size: 6rem;
+}
+
+#clk2-time,#clk2-date{ 
+    color:#c43a30;
+    text-shadow:0 5px 10px #FF2525;
+}
+
+#clk2-time:hover,#clk2-date:hover{
+    color:#495aff;
+    text-shadow:0 5px 10px #0acffe;
+}
+
+@keyframes sunny {
+    0%{
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 30%;
+    }
+    25%{
+        border-radius: 53% 34% 65% 21% / 47% 28% 68% 30%;
+    }
+    50%{
+        border-radius: 20% 65% 37% 75% / 35% 61% 56% 48%;
+    }
+    75%{
+        border-radius: 65% 40% 59% 37% / 46% 23% 36% 68%;
+    }
+    100%{
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 30%;
+    }
+}
